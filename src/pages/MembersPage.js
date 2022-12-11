@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Navbar from '../components/Navbar';
 
 
 function MembersPage() {
@@ -20,8 +19,6 @@ function MembersPage() {
 
   return (
     <div >
-      <Navbar />
-
       <div className='bg-gray-200 mt-24 gap-6 py-4 px-6 rounded-md container mx-auto flex justify-center items-center flex-wrap'>
         {clubs.map(club => (
           <div onClick={() => setActiveClubId(club.id)} key={club.id} className={`w-16 h-16 ${club.id !== activeClubId ? "opacity-50" : "opacity-100"} hover:opacity-100 border border-gray-500 cursor-pointer rounded-md p-px flex items-center justify-center`}>
