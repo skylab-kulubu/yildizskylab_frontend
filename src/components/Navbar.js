@@ -3,7 +3,7 @@ import {BsFillCalendarEventFill} from "react-icons/bs";
 import skyleblebi from "../images/skylab.png";
 import "./navbar.css";
 import { useState,useRef} from "react";
-import { Routes,Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const listOfElements = (<ul className="hidden md:flex text-base my-auto hover:cursor-pointer group transition-all hover:bg-white hover:text-[#d80b3e] rounded-md border-[1px] border-white p-2"><li className="flex gap-2 text-white hover:text-pink-600"><Link to="/skypanel">Kayıt/Giriş</Link></li></ul>)
 
@@ -23,11 +23,11 @@ const Navbar = () => {
     }
     return(<>
         <div ref={ref} onClick={openMenu} className='overlay got-fade fade-out'></div>
-        <nav style={{zIndex:3}} className="w-full bg-gradient-to-r   from-[#1491d1] to-[#d80b3e] px-4 md:px-12 top-0 fixed">
+        <nav style={{zIndex:3}} className="w-full bg-gradient-to-r from-[#1491d1] to-[#d80b3e] px-4 md:px-12 top-0 fixed">
             
             <ul className="flex justify-between">
                 <li className="p-2">
-                    <img className="h-16" src={skyleblebi} alt=""/>
+                    <Link to="/"><img className="h-16" src={skyleblebi} alt=""/></Link>
                 </li>
                 <ul className="flex gap-4">
                     {listOfElements}
