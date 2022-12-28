@@ -5,3 +5,7 @@ export const scrollState = atom({
   default: 0,
 });
 
+export const clubs = atom({
+  key: "clubs",
+  default: [],
+});
