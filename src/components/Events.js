@@ -41,7 +41,7 @@ function Events() {
             <div className="carousel-item active relative float-left w-full">
               <img
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-                className="block w-full min-h-96 object-cover"
+                className="block w-full h-96 md:h-auto object-cover"
                 alt="..."
               />
               <div className="carousel-caption hidden md:block absolute text-center">
@@ -54,7 +54,7 @@ function Events() {
             <div className="carousel-item relative float-left w-full">
               <img
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-                className="block w-full min-h-96 object-cover"
+                className="block w-full h-96 md:h-full object-cover"
                 alt="..."
               />
               <div className="carousel-caption hidden md:block absolute text-center">
@@ -67,7 +67,7 @@ function Events() {
             <div className="carousel-item relative float-left w-full">
               <img
                 src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-                className="block w-full min-h-96 object-cover"
+                className="block w-full h-96 md:h-full object-cover"
                 alt="..."
               />
               <div className="carousel-caption hidden md:block absolute text-center">

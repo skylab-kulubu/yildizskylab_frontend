@@ -7,8 +7,8 @@ const ContactPage = () => {
   };
   return (
     <div className="h-full bg-gradient-to-r from-[#57baec] to-[#f37695]">
-      <div className="container mx-auto px-4 flex gap-4 pt-24 flex-col md:flex-row items-center justify-center h-[calc(100vh-4rem)]">
-        <div className="flex flex-col justify-center items-center bg-white/25 rounded-2xl p-5 md:pt-12 ">
+      <div className="container mx-auto px-4 grid grid-cols-5 md:place-content-center gap-4 pt-24 h-[calc(100vh-4rem)]">
+        <div className="col-span-5 md:col-span-3 flex flex-col justify-center items-center bg-white/25 rounded-2xl px-5 py-12">
           <h2 className='text-2xl bold text-violet-700'>Bize Ulaşın</h2>
           <form className="flex flex-col gap-2 text-base mt-5" onSubmit={onSubmit}>
             <div className="flex flex-col md:flex-row justify-between gap-2">
@@ -56,8 +56,8 @@ const ContactPage = () => {
         <Lottie
           animationData={animationData}
           loop={true}
-          className="hidden md:block"
-          style={{ width: "100%", height: "100%", maxHeight: "30rem" }}
+          className="hidden md:block md:col-span-2"
+          style={{ width: "100%", height: "100%", maxHeight: "20rem" }}
         />
       </div>
     </div>

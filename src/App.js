@@ -19,7 +19,7 @@ function App() {
   },[])
   
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full flex flex-col justify-start'>
       <header>
         <Navbar/>
       </header>
