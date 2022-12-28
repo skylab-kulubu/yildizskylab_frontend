@@ -5,6 +5,7 @@
 
 @media (max-width: 600px) {
   .banner {
-    height: 45vh;
+    height: calc(50vh - 80px);
+    object-fit: cover;
   }
 }
