@@ -22,6 +22,8 @@ const Navbar = () => {
     ref.current.classList.toggle("fade-out");
     refTwo.current.classList.toggle("fade-in");
     refTwo.current.classList.toggle("fade-out");
+    refTwo.current.classList.toggle("menu");
+    refTwo.current.classList.toggle("menuActive");
     setOpen(!open);
   };
   return (
@@ -53,19 +55,19 @@ const Navbar = () => {
           </ul>
 
           <div ref={refTwo} className="menu w-2/3 md:w-1/4 got-fade fade-out">
-            <Link to="/ekipler">
+            <Link to="/ekipler" onClick={openMenu}>
               <div className="flex gap-4">
                 <RiTeamFill className=" my-auto" />
                 <p>Ekipler</p>
               </div>
             </Link>
-            <Link to="/etkinlikler">
+            <Link to="/etkinlikler" onClick={openMenu}>
               <div className="flex gap-4">
                 <BsFillCalendarEventFill className="my-auto" />
                 <p>Etkinlikler</p>
               </div>
             </Link>
-            <Link to="/iletisim">
+            <Link to="/iletisim" onClick={openMenu}>
               <div className="flex gap-4">
                 <RiTeamFill className="my-auto" />
                 <p>İletişim</p>
